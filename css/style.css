@@ -1,0 +1,38 @@
+body{
+    background: #fff;
+}
+.mastercard{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 575px;
+    font-size: 96px;
+    line-height: 320px;
+    letter-spacing: -6px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    display: block;
+    margin: 200px auto;
+
+}
+.mastercard::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    width: 345px;
+    background: linear-gradient(#ff9900 50%,#cc0000 50%);
+    box-shadow: 230px 0 0 0 #ff9900, 230px 0 0 0 #cc0000 inset;
+    background-size: 45px 45px;
+    z-index: -1;
+}
+.mastercard::after{
+    content: '\00ae';
+    padding-left: 5px;
+    font-size: 30px;
+    font: Helvetica,sans-serif;
+}
